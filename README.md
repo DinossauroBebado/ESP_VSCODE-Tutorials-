@@ -21,11 +21,11 @@ board = esp32doit-devkit-v1
 framework = arduino
 
 ``` 
-Now you have two enviroments the One and Two. To change between they is in the botton of the page 
+Now you have two enviroments the One and Two. To change between them is in the botton of the page 
 
 <img src = "https://media.discordapp.net/attachments/913213236793475073/980100066117304360/unknown.png?width=1012&height=616"> 
 
-Them you need to add the src_filter this will select wich files you don't want to compile so 
+Them you need to add the src_filter this will select wich files you don't want to compile so for Env_two : 
 
 ``` 
 src_filter = +<*> -<.git/> -<.svn/> -<Env_one>
