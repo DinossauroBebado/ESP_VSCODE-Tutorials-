@@ -6,3 +6,4 @@ How to have separates codes, at the same project and being able to easily change
  # Upload over the air
  Upload code with the esp far away from the computer, our in a difficult place to acess like a robot. 
  
+# [TO DO] How to work with muliple cores 
