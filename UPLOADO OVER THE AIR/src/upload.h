@@ -50,7 +50,7 @@ void upload_OTA(const char* ssid,const char* password) {
   digitalWrite(2,LOW);
 
   server.on("/", HTTP_GET, [](AsyncWebServerRequest *request) {
-    request->send(200, "text/plain", "CrossBots-> tututorial by: Dinossauro Bebado");
+    request->send(200, "text/plain", "Tutorial by: Dinossauro Bebado");
   });
 
   AsyncElegantOTA.begin(&server);    // Start ElegantOTA
