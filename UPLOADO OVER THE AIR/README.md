@@ -6,7 +6,7 @@ How to upload code with out the need of a cable
 - AsyncTCP.h
 - ESPAsyncWebServer.h
 - AsyncElegantOTA.h 
- You can do it be the Plataform IO libs management or copy from .pio/libsdeps from this repo 
+ You can do it be the Plataform IO libs management or copy from .pio/libsdeps in this repo 
 ### Than add the upload.h librabry from this repe
 - in the setup of your code add the function "upload_OTA("SSD","PASSWORD")"
 - Change the SSD and PASSWORD to your wi-fi credencial 
@@ -15,8 +15,8 @@ How to upload code with out the need of a cable
 
 # Get the ip 
 - In the serial monitor should print the ip of the ESP 
-- You should be able to get the ip by  your router 
-- In the browser time the ip 
+- You should  also be able to get the ip by  your router 
+- In the browser type the ip 
 - Should load the page 
 # Upload 
 - Now go to ip/upload 
