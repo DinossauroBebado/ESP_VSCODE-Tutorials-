@@ -18,6 +18,9 @@
 
 AsyncWebServer server(80);
 
+bool blink = true;
+
+
 void upload_OTA(const char* ssid,const char* password) {
   pinMode(2,OUTPUT);
   digitalWrite(2,HIGH);
@@ -30,12 +33,21 @@ void upload_OTA(const char* ssid,const char* password) {
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
+    blink = blink?false:true;
+    digitalWrite(2,blink);
   }
   Serial.println("");
   Serial.print("Connected to ");
   Serial.println(ssid);
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
+  digitalWrite(2,LOW);
+  digitalWrite(2,HIGH);
+  delay(50);
+  digitalWrite(2,LOW);
+  digitalWrite(2,HIGH);
+  delay(50);
+  digitalWrite(2,LOW);
 
   server.on("/", HTTP_GET, [](AsyncWebServerRequest *request) {
     request->send(200, "text/plain", "CrossBots-> tututorial by: Dinossauro Bebado");
