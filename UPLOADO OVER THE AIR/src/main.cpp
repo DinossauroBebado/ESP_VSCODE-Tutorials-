@@ -13,7 +13,7 @@
 
 
 void setup(void) {
-  upload_OTA("CHERNOBYL_2G","guithafer520");
+  upload_OTA("SSD","PASSWORD");
 }
 void loop(void) {
 
